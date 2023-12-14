@@ -1,5 +1,3 @@
-set-hostname frontend
-
 dnf install nginx -y
 
 rm -rf /usr/share/nginx/html/*
