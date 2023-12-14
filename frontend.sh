@@ -1,5 +1,5 @@
-echo set hostname
-set-hostname frontend
+#echo set hostname
+#set-hostname frontend
 
 echo Install Nginx
 dnf install nginx -y
