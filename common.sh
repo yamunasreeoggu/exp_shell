@@ -8,9 +8,9 @@ download_and_extract () {
 
 status_check () {
   if [ $? -eq 0 ]; then
-    echo SUCCESS
+    echo -e "\e[32mSUCCESS\e[0m"
   else
-    echo FAILURE
-    exit 1
+    echo -e "\e[31mFAILURE\e[0m"
+  exit 1
   fi
 }
