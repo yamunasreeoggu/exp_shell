@@ -7,10 +7,10 @@ download_and_extract () {
 }
 
 status_check () {
-    if [ $? -eq 0 ]; then
-      echo -e "\e[32SUCCESS\e[0m"
-    else
-      echo -e "\e[31FAILURE\e[0m"
-      exit 1
+  if [ $? -eq 0 ]; then
+    echo SUCCESS
+  else
+    echo FAILURE
+    exit 1
   fi
 }
