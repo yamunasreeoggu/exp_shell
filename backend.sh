@@ -31,4 +31,4 @@ echo Install MySQL Client
 dnf install mysql -y
 
 echo Load Schema
-mysql -h 172.31.45.27 -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h mysql.yamunadevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
