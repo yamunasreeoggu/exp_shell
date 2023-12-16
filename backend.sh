@@ -19,7 +19,10 @@ rm -rf /app &>>$log_file
 status_check
 
 echo Add Application User
-useradd expense &>>$log_file
+id expense &>>$log_file
+if [ $? -ne 0 ]; then
+  useradd expense &>>$log_file
+fi
 status_check
 
 echo Create app Directory
