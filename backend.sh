@@ -1,4 +1,4 @@
-source=common.sh
+source common.sh
 component=backend
 
 echo Disable NodeJS 10 Version

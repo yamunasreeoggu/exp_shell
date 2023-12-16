@@ -1,4 +1,4 @@
-source=common.sh
+source common.sh
 component=frontend
 
 echo Install Nginx
