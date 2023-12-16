@@ -7,7 +7,10 @@ dnf module enable nodejs:18 -y &>>$log_file
 status_check
 
 echo Install NodeJS
-dnf install nodejs -y &>>$log_file
+type npm &>>$log_file
+if [ $? -ne 0 ]; then
+  dnf install nodejs -y &>>$log_file
+fi
 status_check
 
 echo Copy backend Service file
