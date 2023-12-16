@@ -51,5 +51,6 @@ dnf install mysql -y &>>$log_file
 status_check
 
 echo Load Schema
-mysql -h mysql.yamunadevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>$log_file
+mysql_root_password=$1
+mysql -h mysql.yamunadevops.online -uroot -p$mysql_root_password < /app/schema/backend.sql &>>$log_file
 status_check
